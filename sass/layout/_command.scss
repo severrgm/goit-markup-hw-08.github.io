@@ -4,14 +4,44 @@
 }
 
 .command-list {
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
 }
 
 .command-list__item {
   background-color: #ffffff;
-  width: 270px;
-  .command-list & + & {
-    margin-left: 30px;
+  width: 100%;
+  // .command-list & + & {
+  //   margin-left: 30px;
+  // }
+  .command-list &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    .command-list &:nth-child(2n + 2) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 354px;
+    .command-list &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .command-header {

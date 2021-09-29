@@ -19,7 +19,7 @@
 }
 
 .hero-text {
-  max-width: 696px;
+  max-width: 320px;
   margin-top: 0px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -32,7 +32,17 @@
   text-transform: uppercase;
   color: var(--secondary-title-color);
   @media screen and (min-width: 480px) {
+    max-width: 360px;
     font-size: 26px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc (60/44);
+    max-width: 696px;
   }
 }
 .hero-box {
