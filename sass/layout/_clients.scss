@@ -48,7 +48,7 @@
 
   @media screen and (min-width: 768px) {
     width: 220px;
-    .clients-list &:nth-child(3n + 2) {
+    .clients-list &:nth-child(7n - 4) {
       margin-bottom: 30px;
     }
 

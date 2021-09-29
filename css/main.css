@@ -530,7 +530,7 @@ p {
   .clients-list__item {
     width: 220px;
   }
-  .clients-list .clients-list__item:nth-child(3n + 2) {
+  .clients-list .clients-list__item:nth-child(7n - 4) {
     margin-bottom: 30px;
   }
 }
