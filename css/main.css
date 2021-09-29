@@ -33,29 +33,10 @@ a {
   color: inherit;
 }
 
-section {
-  padding-bottom: 94px;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-h1 {
-  max-width: 696px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--secondary-title-color);
 }
 
 h2,
@@ -65,7 +46,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -180,8 +161,6 @@ p {
 }
 
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -193,6 +172,31 @@ p {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/imghero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hero-text {
+  max-width: 696px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 13px;
+  line-height: calc 1.61538;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+
+@media screen and (min-width: 480px) {
+  .hero-text {
+    font-size: 26px;
+  }
+}
+
+.hero-box {
+  padding: 118px 60px 198px 60px;
 }
 
 .benefits-list {

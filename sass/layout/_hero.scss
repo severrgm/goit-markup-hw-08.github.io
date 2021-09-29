@@ -1,6 +1,6 @@
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
   text-align: center;
 }
 .overlay {
@@ -16,4 +16,25 @@
     url(../img/imghero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hero-text {
+  max-width: 696px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 13px;
+  line-height: calc (42/26);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+  }
+}
+.hero-box {
+  padding: 118px 60px 198px 60px;
 }
