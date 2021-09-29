@@ -1,0 +1,61 @@
+.benefits-list {
+  display: flex;
+}
+.benefits-list .benefits-list__item + .benefits-list__item {
+  margin-left: 30px;
+}
+.benefits-list__item {
+  width: 270px;
+  &::before {
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    height: 120px;
+    background-size: contain;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+  }
+}
+.benefits-section {
+  margin-top: 0px;
+  padding-top: 94px;
+}
+.benefits-list__header {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.benefits-list__text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../img/benefit1.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../img/benefit2.svg);
+}
+
+.icon-plan::before {
+  background-image: url(../img/benefit3.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../img/benefit4.svg);
+}
