@@ -3,10 +3,10 @@
 }
 
 .clients-list {
+  margin: -15px;
   display: flex;
   flex-wrap: wrap;
   // max-width: 450px;
-  margin: -15px;
 }
 .clients-header {
   margin-top: 0px;
@@ -26,6 +26,7 @@
   // width: 130px;
   margin: 15px;
   flex-basis: calc((100%-60px) / 2);
+
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
