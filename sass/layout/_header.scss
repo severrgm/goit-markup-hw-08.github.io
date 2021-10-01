@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid #ececec;
+  justify-content: space-between;
 }
 .nav-container {
   display: flex;
@@ -9,11 +10,15 @@
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: #2196f3;
   margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
 .header-accent {
@@ -22,6 +27,7 @@
 
 .header-list {
   display: flex;
+  display: none;
 
   & .link.current {
     color: var(--accent-color);
@@ -62,6 +68,7 @@
 .header-right {
   display: flex;
   margin-left: auto;
+  display: none;
 }
 
 .header-right .contacts-item + .contacts-item {
@@ -95,4 +102,9 @@
 .header-logo.link {
   padding-top: 24px;
   padding-bottom: 25px;
+}
+.mob-menu {
+}
+.menu-open {
+  border: unset;
 }

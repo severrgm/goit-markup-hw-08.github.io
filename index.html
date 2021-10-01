@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <div class="nav-container container">
     <nav class="header-navigation">
         
@@ -71,10 +71,41 @@
             
         </li>
         </ul> 
+        <button class="menu-open"> 
+            <svg class="icon-open" width="24" height="16">
+            
+                <use href="./img/icons.svg#icon-menu_24px"> </use>
+            
+            </svg>
+        </button>
+
+        <div class="mob-menu">
+      
+        <svg class="icon-open" width="19" height="19">
         
+            <use href="./img/sprite.svg#icon-close"> </use>
+       
+        </svg>
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu__item">
+                <a href="index.html" class="mobile-menu__link link current">Студия</a>
+                <div class="header-line current">
         
+                </div>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="portfolio.html" class="mobile-menu-list__link link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link link">Контакты</a>
+            </li>
+        
+        </ul>
+        
+
         </div>
-  </header>   -->
+        </div>
+  </header>  
   <main>
     
         <section class="hero-section overlay">
@@ -156,8 +187,12 @@
         <h2 class="command-header">Наша команда</h2>
         <ul class="command-list">
             <li class="command-list__item">
+                <picture>
+                    <source src="./img/command/com-img1-mob-x1.jpg 1x, ./img/command/com-img1-mob-x2.jpg  2x" media="(min-width:480px)">
+                    <source src="./img/command/com-img1-tab-x1.jpg 1x, ./img/command/com-img1-tab-x2.jpg  2x" media="(min-width:768px)">
+                    <source src="./img/command/com-img1-desk-x1.jpg 1x, ./img/command/com-img1-desk-x2.jpg  2x" media="(min-width:1200px)">
+                    <img src="./img/img4.jpg ">
                 
-                <img src="./img/img4.jpg" alt="Product Designer" width="270" height="260">
                 <div class="command-list__member">
                 <h3 class="command-list__header">Игорь Демьяненко</h3>
                 <p class="command-list__text">Product Designer</p>
@@ -195,8 +230,14 @@
                 </div>
             </li>
             <li class="command-list__item">
+                <picture>
+                    <source src="./img/command/com-img2-mob-x1.jpg 1x, ./img/command/com-img2-mob-x2.jpg  2x" media="(min-width:480px)">
+                    <source src="./img/command/com-img2-tab-x1.jpg 1x, ./img/command/com-img2-tab-x2.jpg  2x" media="(min-width:768px)">
+                    <source src="./img/command/com-img2-desk-x1.jpg 1x, ./img/command/com-img2-desk-x2.jpg  2x"
+                        media="(min-width:1200px)">
+                    <img src="./img/img5.jpg" alt="Frontend Developer">
+                </picture>
                 
-                <img src="./img/img5.jpg" alt="Frontend Developer" width="270" height="260">
                 <div class="command-list__member">
                 <h3 class="command-list__header">Ольга Репина</h3>
                 <p class="command-list__text">Frontend Developer</p>
@@ -234,8 +275,14 @@
                 </div>
             </li>
             <li class="command-list__item">
+                <picture>
+                    <source src="./img/command/com-img3-mob-x1.jpg 1x, ./img/command/com-img3-mob-x2.jpg  2x" media="(min-width:480px)">
+                    <source src="./img/command/com-img3-tab-x1.jpg 1x, ./img/command/com-img3-tab-x2.jpg  2x" media="(min-width:768px)">
+                    <source src="./img/command/com-img3-desk-x1.jpg 1x, ./img/command/com-img3-desk-x2.jpg  2x"
+                        media="(min-width:1200px)">
+                    <img src="./img/img6.jpg" alt="Marketingr">
+                </picture>
                 
-                <img src="./img/img6.jpg" alt="Marketing" width="270" height="260">
                 <div class="command-list__member">
                 <h3 class="command-list__header">Николай Тарасов</h3>
                 <p class="command-list__text">Marketing</p>
@@ -273,8 +320,14 @@
             </div>
             </li>
             <li class="command-list__item">
+                <picture>
+                    <source src="./img/command/com-img4-mob-x1.jpg 1x, ./img/command/com-img4-mob-x2.jpg  2x" media="(min-width:480px)">
+                    <source src="./img/command/com-img4-tab-x1.jpg 1x, ./img/command/com-img4-tab-x2.jpg  2x" media="(min-width:768px)">
+                    <source src="./img/command/com-img4-desk-x1.jpg 1x, ./img/command/com-img4-desk-x2.jpg  2x"
+                        media="(min-width:1200px)">
+                    <img src="./img/img7.jpg" alt="UI Designer">
+                </picture>
                 
-                <img src="./img/img7.jpg" alt="UI Designer" width="270" height="260">
                 <div class="command-list__member">
                 <h3 class="command-list__header">Михаил Ермаков</h3>
                 <p class="command-list__text">UI Designer</p>
@@ -353,7 +406,6 @@
                     </svg>
                 </a>
             </li>
-
             <li class="clients-list__item">
                 <a href="" class="clients-list__link link">
                     <svg class="clients-list__icon" width="106" height="60">
@@ -361,7 +413,6 @@
                     </svg>
                 </a>
             </li>
-
             </ul>
             </div>
     </section>
