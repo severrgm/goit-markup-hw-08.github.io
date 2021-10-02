@@ -768,8 +768,10 @@ p {
 
 @media screen and (min-width: 1200px) {
   .footer-container {
+    align-items: unset;
+    justify-content: unset;
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
   }
 }
 
@@ -785,6 +787,13 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    align-items: unset;
+    justify-content: unset;
+  }
 }
 
 .footer-accent {
@@ -809,7 +818,7 @@ p {
   margin-bottom: 8px;
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -829,9 +838,18 @@ p {
   justify-content: center;
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mail,
+  .footer-tel {
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 
 .footer-text {
@@ -843,10 +861,17 @@ p {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-text {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 
 .form-box {
@@ -862,7 +887,7 @@ p {
 
 .mailing-form {
   position: relative;
-  left: 151px;
+  left: 0;
   width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -871,8 +896,15 @@ p {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .mailing-form {
+    left: 151px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mailing-form {
+    left: 0;
     width: 358px;
   }
 }
@@ -887,8 +919,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -972,7 +1002,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .adress-social-box {
     display: flex;
     padding: 0;

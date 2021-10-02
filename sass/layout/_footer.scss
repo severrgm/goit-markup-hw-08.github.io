@@ -9,8 +9,10 @@
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 1200px) {
+    align-items: unset;
+    justify-content: unset;
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
   }
 }
 
@@ -26,6 +28,10 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+  @media screen and (min-width: 1200px) {
+    align-items: unset;
+    justify-content: unset;
+  }
 }
 .footer-accent {
   color: #ffffff;
@@ -46,7 +52,7 @@
   margin-bottom: 8px;
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -63,9 +69,14 @@
   justify-content: center;
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 1200px) {
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 
 .footer-text {
@@ -77,10 +88,15 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    // display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 
 // .address-container {
@@ -98,14 +114,18 @@
 
 .mailing-form {
   position: relative;
-  left: 151px;
+  left: 0;
   width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen and(min-width:768px) {
+    left: 151px;
+  }
   @media screen and(min-width:1200px) {
+    left: 0;
     width: 358px;
   }
 }
@@ -120,8 +140,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   // padding-left: 16px;
@@ -189,18 +209,15 @@
   fill: #ffffff;
 }
 
-@media screen and(min-width:768px) {
-  .adress-social-box {
+.adress-social-box {
+  @media screen and(min-width:768px) {
     display: flex;
     padding: 65px 89px 60px 76px;
     justify-content: space-between;
   }
-
   @media screen and(min-width:1200px) {
-    .adress-social-box {
-      display: flex;
-      padding: 0;
-      justify-content: unset;
-    }
+    display: flex;
+    padding: 0;
+    justify-content: unset;
   }
 }
