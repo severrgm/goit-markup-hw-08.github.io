@@ -32,26 +32,3 @@
     fill: #ffffff;
   }
 }
-
-.footer-socials-box {
-  display: block;
-  margin-left: 70px;
-}
-
-.footer-socials {
-  display: flex;
-}
-
-.footer-socials__item {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-}
-
-.footer-socials__icon {
-  fill: #ffffff;
-}

@@ -71,7 +71,7 @@
             
         </li>
         </ul> 
-        <button class="menu-open"> 
+        <button class="menu-open" data-menu-open> 
             <svg class="icon-open" width="24" height="16">
             
                 <use href="./img/icons.svg#icon-menu_24px"> </use>
@@ -79,25 +79,66 @@
             </svg>
         </button>
 
-        <div class="mob-menu">
-      
-        <svg class="icon-open" width="19" height="19">
+        <div class="mob-menu is-hidden" data-menu>
+            <button class="menu-close" data-menu-close> 
+        <svg class="icon-close" width="19" height="19">
         
             <use href="./img/sprite.svg#icon-close"> </use>
-       
         </svg>
+        </button>
+
         <ul class="mobile-menu-list">
-            <li class="mobile-menu__item">
+            <li class="mobile-menu__item ">
                 <a href="index.html" class="mobile-menu__link link current">Студия</a>
-                <div class="header-line current">
-        
-                </div>
             </li>
             <li class="mobile-menu__item">
                 <a href="portfolio.html" class="mobile-menu-list__link link">Портфолио</a>
             </li>
             <li class="mobile-menu__item">
                 <a href="" class="mobile-menu__link link">Контакты</a>
+            </li>
+        
+        </ul>
+        <ul>
+                <li>
+                    <a class="mob-menu-link__tel" href="tel:+380961111111">
+                
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li>
+                    <a class="mob-menu-link__mail" href="mailto:info@devstudio.com">
+                  
+                    info@devstudio.com
+                </a>
+                </li>
+                
+        </ul>
+
+        <ul class="mob-menu__socials">
+            <li class="mob-menu-item__socials">
+                <a class="mob-menu-link__socials" href="">
+        
+                    Instagram
+                </a>
+            </li>
+            <li class="mob-menu-item__socials">
+                <a class="mob-menu-link__socials" href="">
+            
+                    Twitter
+                </a>
+            </li>
+            <li class="mob-menu-item__socials">
+                <a class="mob-menu-link__socials" href="">
+            
+                    Faceboock
+                </a>
+            </li>
+            <li class="mob-menu-item__socials">
+                <a class="mob-menu-link__socials" href="">
+            
+                    Linkedin
+                </a>
             </li>
         
         </ul>
@@ -419,8 +460,9 @@
     
   </main>
 
-<!-- <footer class="footer">
+<footer class="footer">
     <div class="container footer-container">
+             <div class="adress-social-box">
     <div class="address-container">
     <a class="footer-logo link" href="">
         Web<span class="footer-accent">Studio</span>
@@ -431,7 +473,7 @@
 
         
 
-        <ul>
+        <ul class="footer-contacts-list">
             <li class="mail-li">
                 <a class="footer-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -478,7 +520,7 @@
     
     </ul>
     </div>
-
+                </div>
     <div class="form-box">
         <p class="footer-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
         <form action="#" class="mailing-form">
@@ -498,7 +540,7 @@
     </div>
 
     </div>
-</footer> -->
+</footer>
   <div class="backdrop is-hidden" data-modal>
       <div class="modal">
           <button type="button" class="btn-close" data-modal-close>
@@ -563,5 +605,6 @@
       </div>
   </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
