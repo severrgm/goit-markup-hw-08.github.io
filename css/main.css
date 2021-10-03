@@ -1093,6 +1093,10 @@ p {
   border-right: 1px solid #eeeeee;
 }
 
+.works-item {
+  height: 404px;
+}
+
 .works-item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -1118,7 +1122,7 @@ p {
 
 .works-hover-text {
   position: absolute;
-  padding: 63px 24px 63px 24px;
+  padding: 77px 24px 77px 24px;
   top: 0;
   left: 0;
   height: 100%;
@@ -1133,6 +1137,18 @@ p {
 .works-link:hover .works-hover-text {
   transform: translateY(0%);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .works-hover-text {
+    padding: 49px 24px 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works-hover-text {
+    padding: 63px 24px 63px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
