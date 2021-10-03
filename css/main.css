@@ -1237,7 +1237,7 @@ p {
   margin-bottom: 4px;
 }
 
-.modal-form-input:focus + .modal-form-label {
+.modal-form-label:focus-within {
   color: var(--accent-color);
 }
 
