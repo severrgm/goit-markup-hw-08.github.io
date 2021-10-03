@@ -58,6 +58,12 @@ p {
   margin-right: auto;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -84,6 +90,7 @@ p {
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -94,7 +101,6 @@ p {
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-right: 276px;
 }
 
 @media screen and (min-width: 768px) {
@@ -235,6 +241,7 @@ p {
 }
 
 .mob-menu {
+  z-index: 2;
   width: 100vw;
   height: 796px;
   position: fixed;
@@ -264,6 +271,10 @@ p {
   .menu-open {
     display: none;
   }
+}
+
+.link.current {
+  color: var(--accent-color);
 }
 
 .menu-close {
@@ -368,20 +379,20 @@ p {
   margin-right: auto;
   padding: 0;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/herobg/imghero-mob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herobg/imghero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/herobg/imghero-tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herobg/imghero-tab.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/herobg/Imghero-desk.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herobg/Imghero-desk.jpg);
   }
 }
 
@@ -423,7 +434,7 @@ p {
 }
 
 .hero-box {
-  padding: 118px 60px 198px 60px;
+  padding: 118px 0;
 }
 
 .benefits-list {
@@ -888,12 +899,18 @@ p {
 .mailing-form {
   position: relative;
   left: 0;
-  width: 450px;
+  width: 290px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .mailing-form {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -926,7 +943,7 @@ p {
 .mailing-button {
   position: absolute;
   top: 70px;
-  right: 125px;
+  right: 45px;
   width: 200px;
   height: 50px;
   font-family: var(--main-font);
@@ -941,6 +958,12 @@ p {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .mailing-button {
+    right: 125px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1060,19 +1083,16 @@ p {
   border-right: 1px solid #eeeeee;
 }
 
-.works-item {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .works-item {
-    flex-basis: calc((100%-60px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .works-item {
-    flex-basis: calc((100%-60px) / 3);
+    flex-basis: calc((100% - 95px) / 3);
   }
 }
 
@@ -1101,11 +1121,12 @@ p {
   opacity: 1;
 }
 
-.works-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: baseline;
+@media screen and (min-width: 768px) {
+  .works-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+  }
 }
 
 .works-item-header {
@@ -1137,16 +1158,27 @@ p {
 }
 
 .modal {
-  position: absolute;
-  width: 450px;
-  min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    width: 450px;
+    min-height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .btn-close {
@@ -1369,6 +1401,7 @@ p {
 }
 
 .backdrop {
+  padding: 15px;
   position: fixed;
   top: 0;
   height: 100vh;

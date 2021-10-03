@@ -14,7 +14,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../img/herobg/imghero-mob.jpg);
+    url(../img/herobg/imghero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -24,7 +24,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/herobg/imghero-tab.jpg);
+      url(../img/herobg/imghero-tab.jpg);
   }
 
   @media screen and(min-width:1200px) {
@@ -33,7 +33,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/herobg/Imghero-desk.jpg);
+      url(../img/herobg/Imghero-desk.jpg);
   }
 }
 
@@ -65,5 +65,5 @@
   }
 }
 .hero-box {
-  padding: 118px 60px 198px 60px;
+  padding: 118px 0;
 }

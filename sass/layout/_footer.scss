@@ -115,12 +115,16 @@
 .mailing-form {
   position: relative;
   left: 0;
-  width: 450px;
+  width: 290px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
   @media screen and(min-width:768px) {
     left: 151px;
   }
@@ -150,7 +154,7 @@
 .mailing-button {
   position: absolute;
   top: 70px;
-  right: 125px;
+  right: 45px;
   width: 200px;
   height: 50px;
   font-family: var(--main-font);
@@ -165,6 +169,9 @@
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  @media screen and(min-width:480px) {
+    right: 125px;
+  }
   @media screen and(min-width:1200px) {
     top: 0;
     right: -212px;
