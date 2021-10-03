@@ -375,8 +375,6 @@ p {
 
 .overlay {
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0;
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/herobg/imghero-mob.jpg);
@@ -511,6 +509,12 @@ p {
   text-transform: uppercase;
   color: var(--main-title-color);
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list__header {
+    text-align: unset;
+  }
 }
 
 .benefits-list__text {
@@ -1134,7 +1138,7 @@ p {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }

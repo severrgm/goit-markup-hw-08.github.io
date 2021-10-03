@@ -12,9 +12,6 @@
     justify-content: center;
   }
 
-  @media screen and (min-width: 1200px) {
-  }
-
   // justify-content: center;
   // margin-bottom: 50px;
 }
@@ -117,7 +114,7 @@
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
