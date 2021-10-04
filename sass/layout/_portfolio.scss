@@ -3,9 +3,16 @@
   flex-wrap: wrap;
   justify-content: baseline;
   align-items: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 34px;
   }
 
   // justify-content: center;
