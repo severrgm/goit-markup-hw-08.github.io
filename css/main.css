@@ -1102,14 +1102,14 @@ p {
 @media screen and (min-width: 768px) {
   .btn-list {
     justify-content: center;
-    margin-bottom: 14px;
+    margin-bottom: -1px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .btn-list {
     margin-top: 94px;
-    margin-bottom: 34px;
+    margin-bottom: 19px;
   }
 }
 
