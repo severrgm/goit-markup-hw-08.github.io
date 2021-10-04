@@ -1424,6 +1424,13 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
 .form-button {
   display: block;
   margin: 0 auto;
