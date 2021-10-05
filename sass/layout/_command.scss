@@ -1,5 +1,9 @@
 .command-section {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .command-list {
@@ -38,6 +42,10 @@
     width: 354px;
     .command-list &:not(:last-child) {
       margin-right: 30px;
+      margin-bottom: 0;
+    }
+    .command-list &:nth-child(2n + 2) {
+      margin-bottom: 0;
     }
   }
 }
